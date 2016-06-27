@@ -81,4 +81,12 @@ $param = array(
   'ip'=>'192.168.43.70',
   'request'=>'command=relayoff');
 echo getsocketdata($param);// LOW,response = command=relayoff&value=0
+
+//contoh set relay on
+//hidupkan lampu pada ruang tamu
+$param = array(
+  'port'=>'80',
+  'ip'=>'192.168.43.71',
+  'request'=>'command=relayon');
+echo getsocketdata($param);// HIGH ,response = command=relayon&value=1
 ?>
